@@ -3,13 +3,16 @@ import { useState, useEffect } from "react";
 
 import { usePathname } from "next/navigation";
 
-import Logo from "./Logo";
-import PrimaryButton from "./PrimaryButton";
+import Logo from "@/components/custom/Logo";
+import PrimaryButton from "@/components/custom/PrimaryButton";
 
-// import { useAuth } from "@/context/authContext";
+import { useAuth } from "@/context/authContext";
 
 import { getAuthenticatedUserName } from "@/lib/getAuthenticatedUserName";
 
+/**
+ * Represents the navigation bar component.
+ */
 const Navbar = () => {
   const { user, logout } = useAuth();
   const [userName, setUserName] = useState<string>("");
