@@ -8,7 +8,7 @@ import PrimaryButton from "./PrimaryButton";
 
 // import { useAuth } from "@/context/authContext";
 
-import { getAuthenticatedUserName } from "@/app/lib/getAuthenticatedUserName";
+import { getAuthenticatedUserName } from "@/lib/getAuthenticatedUserName";
 
 const Navbar = () => {
   const { user, logout } = useAuth();
